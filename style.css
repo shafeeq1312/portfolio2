@@ -527,13 +527,13 @@ footer {
    
   }
    .contact-in input {
-    width: 90%;
-    height: 30px;
-
-  textarea {
     width: 95%;
+    height: 35px;
+   }
+  textarea {
+    width: 100%;
   }
-  fotter {
+  footer {
     display: flex;
     align-items: center;
     justify-content: center;
