@@ -240,7 +240,7 @@ p {
 }
 
 .projects {
-  width: 90%;
+  width: 95%;
   margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -251,6 +251,7 @@ p {
 }
 
 .container {
+  width: 100%;
   border: 2px solid rgb(0, 231, 154);
   box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
 
@@ -262,11 +263,11 @@ p {
 
 .projects img {
   display: block;
-  width: 400px;
+  width: 420px;
   height: 60%;
   object-fit: contain;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   margin:20px;
 
   transition: transform 0.3s ease-in-out;
