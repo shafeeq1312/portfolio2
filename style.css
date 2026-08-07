@@ -441,7 +441,7 @@ footer {
     justify-content: center;
   }
   .role {
-    padding-top: 20px;
+    padding-top: 7px;
     padding-left: 20px;
   }
   section p {
@@ -469,7 +469,7 @@ footer {
     gap: 20px;
   }
   .strip {
-    font-size: 14px;
+    font-size: 7px;
   }
   .about-content {
     display: flex;
