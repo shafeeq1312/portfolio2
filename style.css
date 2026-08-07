@@ -1,10 +1,12 @@
 * {
   padding: 0%;
   margin: 0%;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100vw;
+  width: 100%;
+  overflow-x:hidden ;
   height: auto;
   display: grid;
   grid-template-rows: 16vh 1fr 10vh;
@@ -13,6 +15,13 @@ body {
 header {
   background: rgba(4, 26, 30, 0.95);
   z-index: 100;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+
 }
 nav {
   display: flex;
@@ -57,7 +66,6 @@ main {
 }
 .hero {
   padding: 50px;
-
   margin: 40px;
   display: flex;
   align-items: center;
@@ -126,8 +134,8 @@ a {
 }
 .profile {
   position: relative;
-  margin-right: 50px;
-  margin-left: 50px;
+ gap:10px;
+ 
   width: 40vh;
   height: 40vh;
 }
@@ -177,6 +185,7 @@ p {
   align-items: center;
   justify-content: flex-start;
   gap: 100px;
+  padding: 100px;
   padding-top: 150px;
   margin-top: -90px;
 }
@@ -184,6 +193,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin: auto;
   width: 50%;
 }
 .about-content h1 {
@@ -381,46 +391,58 @@ footer {
 
 
 @media screen and (max-width:768px){
-  nav
-  {
-    display:flex;
-    flex-direction: column;
-  }
-  nav h1
-{
-  margin: 12px;
-  text-align: center;
-}
-Ul
-{
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-li
-{
-  padding-left: 50px;
-  padding-right: 50px;
-   margin: 5px;
-  justify-content: space-between;
-}
+
+
+
+
 .hero{
   display: flex;
+  width: 100%;
   flex-direction: column;
-  margin:auto;
+  margin:0;
+  padding: 20px;
 }
+.menu-icon{
+  display:block;
+  font-size: 30px;
+  cursor: pointer;
+}
+ .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #222;
+        padding: 20px;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        background: rgba(4, 26, 30, 0.95);
+    }
 section
 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.name{
+  padding-top:20px;
+  font-size: 30px;
+display:flex;  
+align-items: center;
+  justify-content: center;
+}
+.role{
+    padding-top:20px;
+}
 section p{
   display: flex;
   align-items: center;
-  width:80%;
-  padding: 30px;
-  margin:7px;
+    width:360px;
+    padding:15px;
 }
 .btn{
   margin-bottom: 30px;
@@ -429,27 +451,104 @@ section p{
 .profile{
   display: flex;
   align-items: center;
-  margin: auto;
+  margin:20px auto;
   padding: auto;
 }
 .about{
   display: flex;
   flex-direction: column-reverse;
+   padding:20px;
+    gap:20px;
+}
+.strip{
+  font-size: 25px;
 }
 .about-content{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
+}
+.about-content h1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.about-content  h2
+{ margin-top:10px ;
+  display: flex;
 }
 .about-content p
 {
   display: flex;
   align-items: center;
-  width:85%;
-  padding: 30px;
-  margin:7px;
+  justify-content: center;
+    width:370px;
+    padding:15px;
+}
+.iconsin
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projects h1
+{
+  margin-bottom: 10px;
+}
+.projects
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+   gap:40px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width:96%;
+  height:90%;
+  
+}
+.container>img{
+  margin-top: 20px;
+  width:95%;
+}
+.container h2{
+  padding-top:10px;
 }
 
+.skillin{
+  display: flex;
+  flex-direction: column;
+  width:93%;
+  border: 2px solid  rgb(0, 231, 154);
+  box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
 }
+.contact{
+ display: flex;
+  flex-direction: column;
+}
+.contact-in{
+  width: 90%;
+
+}
+textarea{
+  width:95%;
+}
+fotter{
+  display: flex;
+  align-items: center;
+}
+}
+
+
+
 
 
