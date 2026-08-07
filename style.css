@@ -9,12 +9,13 @@ body {
   overflow-x: hidden;
   height: auto;
   display: grid;
-  grid-template-rows: 16vh 1fr 10vh;
+  grid-template-rows: 13vh 1fr 10vh;
   color: rgb(127, 204, 176);
 }
 header {
   background: rgba(4, 26, 30, 0.95);
   z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
 }
 #menu-toggle {
   display: none;
@@ -65,8 +66,8 @@ main {
   background: rgba(4, 26, 30, 0.95);
 }
 .hero {
-  padding: 25px;
-  margin:20px 10px 30px 30px;
+  padding: 35px;
+  margin:40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
