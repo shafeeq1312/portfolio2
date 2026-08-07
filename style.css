@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  overflow-x:hidden ;
+  overflow-x: hidden;
   height: auto;
   display: grid;
   grid-template-rows: 16vh 1fr 10vh;
@@ -21,7 +21,6 @@ header {
 }
 .menu-icon {
   display: none;
-
 }
 nav {
   display: flex;
@@ -134,8 +133,8 @@ a {
 }
 .profile {
   position: relative;
- gap:10px;
- 
+  gap: 10px;
+
   width: 40vh;
   height: 40vh;
 }
@@ -386,169 +385,155 @@ footer {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 90%;
+    background: #222;
+    padding: 20px;
+  }
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+    background: rgba(4, 26, 30, 0.95);
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .name {
+    padding-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .role {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  section p {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    padding: 15px;
+  }
+  .btn {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 50%;
+  }
 
+  .profile {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: auto;
+  }
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    gap: 20px;
+  }
+  .strip {
+    font-size: 14px;
+  }
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .about-content h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .about-content h2 {
+    margin-top: 10px;
+    display: flex;
+  }
+  .about-content p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    padding: 15px;
+  }
+  .iconsin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .projects h1 {
+    margin-bottom: 10px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 96%;
+    height: 90%;
+  }
+  .container > img {
+    margin-top: 20px;
+    width: 95%;
+  }
+  .container h2 {
+    padding-top: 10px;
+  }
 
-
-
-@media screen and (max-width:768px){
-
-
-
-
-.hero{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin:0;
-  padding: 20px;
+  .skillin {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    border: 2px solid rgb(0, 231, 154);
+    box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-in {
+    width: 90%;
+  }
+  textarea {
+    width: 95%;
+  }
+  fotter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h3 {
+    font-size: 14px;
+  }
 }
-.menu-icon{
-  display:block;
-  font-size: 30px;
-  cursor: pointer;
-}
- .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background: #222;
-        padding: 20px;
-    }
-
-    #menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex;
-        background: rgba(4, 26, 30, 0.95);
-    }
-section
-{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.name{
-  padding-top:20px;
-  font-size: 30px;
-display:flex;  
-align-items: center;
-  justify-content: center;
-}
-.role{
-    padding-top:20px;
-}
-section p{
-  display: flex;
-  align-items: center;
-    width:360px;
-    padding:15px;
-}
-.btn{
-  margin-bottom: 30px;
-}
-
-.profile{
-  display: flex;
-  align-items: center;
-  margin:20px auto;
-  padding: auto;
-}
-.about{
-  display: flex;
-  flex-direction: column-reverse;
-   padding:20px;
-    gap:20px;
-}
-.strip{
-  font-size: 25px;
-}
-.about-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-.about-content h1
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-}
-.about-content  h2
-{ margin-top:10px ;
-  display: flex;
-}
-.about-content p
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    width:370px;
-    padding:15px;
-}
-.iconsin
-{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.projects h1
-{
-  margin-bottom: 10px;
-}
-.projects
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-   gap:40px;
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width:96%;
-  height:90%;
-  
-}
-.container>img{
-  margin-top: 20px;
-  width:95%;
-}
-.container h2{
-  padding-top:10px;
-}
-
-.skillin{
-  display: flex;
-  flex-direction: column;
-  width:93%;
-  border: 2px solid  rgb(0, 231, 154);
-  box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
-}
-.contact{
- display: flex;
-  flex-direction: column;
-}
-.contact-in{
-  width: 90%;
-
-}
-textarea{
-  width:95%;
-}
-fotter{
-  display: flex;
-  align-items: center;
-}
-}
-
-
-
-
-
