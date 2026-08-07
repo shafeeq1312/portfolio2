@@ -299,6 +299,9 @@ p {
   justify-content: center;
   width: 80%;
   border-radius: 40px;
+    border: 2px solid rgb(0, 231, 154);
+    box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
+
 }
 .skillin > h4 {
   font-size: 30px;
@@ -546,6 +549,7 @@ footer {
     width: 93%;
     border: 2px solid rgb(0, 231, 154);
     box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
+    
   }
   h1{
     font-size: 37px;
