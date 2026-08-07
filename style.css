@@ -265,6 +265,8 @@ p {
   width: 400px;
   height: 60%;
   object-fit: contain;
+  box-sizing: border-box;
+  padding: 10px;
   margin:20px;
 
   transition: transform 0.3s ease-in-out;
