@@ -65,7 +65,7 @@ main {
   background: rgba(4, 26, 30, 0.95);
 }
 .hero {
-  padding: 50px;
+  padding: 25px;
   margin: 40px;
   display: flex;
   align-items: center;
