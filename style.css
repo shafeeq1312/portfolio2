@@ -261,12 +261,12 @@ p {
 }
 
 .projects img {
-  width: 400px;
-  height: 240px;
-  padding: 25px;
   display: block;
-  object-fit: cover;
-  border-radius: 30px;
+  width: 400px;
+  height: 60%;
+  object-fit: contain;
+  margin:20px;
+
   transition: transform 0.3s ease-in-out;
 }
 .projects img:hover {
