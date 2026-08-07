@@ -433,12 +433,10 @@ footer {
     justify-content: space-between;
   }
   .name {
+    width: 400px;
+    text-align: center;
     padding-top: 20px;
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 26px;
   }
   .role {
     padding-top: 7px;
