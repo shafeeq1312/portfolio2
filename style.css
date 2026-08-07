@@ -26,7 +26,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 nav h1 {
   margin: 30px;
@@ -66,7 +65,7 @@ main {
 }
 .hero {
   padding: 35px;
-  margin:40px;
+  margin: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,7 +258,7 @@ p {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  padding: 10px ;
+  padding: 10px;
 }
 
 .projects img {
@@ -290,16 +289,15 @@ p {
   margin-top: -90px;
 }
 .skillin {
-  width:90% ;
+  width: 95%;
   margin: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  border-radius: 40px;
-    border: 2px solid rgb(0, 231, 154);
-    box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
 
+  border-radius: 40px;
+  border: 2px solid rgb(0, 231, 154);
+  box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
 }
 .skillin > h4 {
   font-size: 30px;
@@ -399,10 +397,9 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-  nav h1{
+  nav h1 {
     margin: 25px;
     padding: 10px;
-  
   }
   .hero {
     display: flex;
@@ -502,8 +499,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }.pro
-  {
+  }
+  .pro {
     font-size: 35px;
   }
   .profile {
@@ -512,7 +509,7 @@ footer {
     margin: 20px auto;
     margin-top: 40px;
   }
- 
+
   .projects {
     display: flex;
     flex-direction: column;
@@ -547,9 +544,8 @@ footer {
     width: 93%;
     border: 2px solid rgb(0, 231, 154);
     box-shadow: 0 0 10px rgba(0, 231, 154, 0.5);
-    
   }
-  h1{
+  h1 {
     font-size: 37px;
     padding: 20px;
   }
@@ -559,12 +555,11 @@ footer {
   }
   .contact-in {
     width: 90%;
-   
   }
-   .contact-in input {
+  .contact-in input {
     width: 97%;
     height: 35px;
-   }
+  }
   textarea {
     width: 100%;
   }
